@@ -57,7 +57,29 @@ zomato-restaurants-data-cleaning/
 4. Run all cells step by step
 
 ## 📈 Results
-*(To be updated after project completion — summary of cleaning steps performed and final dataset shape)*
+
+**Original dataset:** 51,717 rows × 17 columns
+**Cleaned dataset:** 51,466 rows × 16 columns
+
+### Cleaning summary:
+- Dropped the `dish_liked` column (~54% missing values)
+- Handled missing values in `location`, `rest_type`, `cuisines`, `rate`, `phone`, and `approx_cost`
+- Checked for duplicate rows (none found)
+- Converted `rate` column from text (e.g. `"4.1/5"`) to numeric float
+- Converted `approx_cost` column from text with commas (e.g. `"1,200"`) to numeric integer
+- Cleaned extra whitespace in text columns (`name`, `location`, `rest_type`, `cuisines`)
+- Standardized `phone` column formatting (removed line breaks)
+- Renamed unclear column names (`approx_cost(for two people)` → `approx_cost`, etc.)
+- Reviewed outliers in `votes`, `approx_cost`, and `rate` — kept as they represent genuine variation (popular vs less popular restaurants, budget vs fine dining) rather than data errors
+
+### Final dataset stats:
+| Column | Min | Max | Mean |
+|---|---|---|---|
+| rate | 1.8 | 4.9 | 3.70 |
+| votes | 0 | 16,832 | 284.76 |
+| approx_cost | 40 | 6,000 | 554.46 |
+
+The cleaned dataset (`zomato_cleaned.csv`) is ready for further analysis and visualization.
 
 ## 👤 Author
 *(Add your name / GitHub profile / LinkedIn here)*
