@@ -82,4 +82,5 @@ zomato-restaurants-data-cleaning/
 The cleaned dataset (`zomato_cleaned.csv`) is ready for further analysis and visualization.
 
 ## 👤 Author
-*(Add your name / GitHub profile / LinkedIn here)*
+🔗 **GitHub Repository:** [zomato-restaurants-data-cleaning](https://github.com/AiWriter404/zomato-restaurants-data-cleaning/tree/main)
+🔗 **Kaggle Notebook:** [zomato-restaurants-data-cleaning](https://www.kaggle.com/code/muhammadumer7804/zomato-restaurants-data-cleaning)
