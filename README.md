@@ -1,5 +1,8 @@
 # Zomato Restaurants — Data Cleaning Project
 
+🔗 **GitHub Repository:** [zomato-restaurants-data-cleaning](https://github.com/AiWriter404/zomato-restaurants-data-cleaning/tree/main)
+🔗 **Kaggle Notebook:** [zomato-restaurants-data-cleaning](https://www.kaggle.com/code/muhammadumer7804/zomato-restaurants-data-cleaning)
+
 ## 📌 Overview
 This project focuses on cleaning and preprocessing the **Zomato Bangalore Restaurants** dataset from Kaggle. The raw dataset contains missing values, duplicate entries, inconsistent text formatting, and mixed data types — making it a great real-world case study for data cleaning practice.
 
@@ -81,6 +84,32 @@ zomato-restaurants-data-cleaning/
 
 The cleaned dataset (`zomato_cleaned.csv`) is ready for further analysis and visualization.
 
+## 📊 Exploratory Data Analysis (EDA)
+
+After cleaning, an in-depth EDA was performed to uncover patterns in restaurant ratings, pricing, cuisines, and location trends.
+
+### Key Insights
+
+**Ratings & Cost Distribution**
+- Most restaurants are rated between 3.5–4.0, showing overall above-average quality
+- Majority of restaurants fall in the ₹300–600 price range for two people, indicating a budget-friendly market
+
+**Online Order & Table Booking**
+- ~59% of restaurants offer online ordering; online order availability has little effect on rating
+- Only ~12% of restaurants offer table booking, but these restaurants have a noticeably higher median rating (~4.1 vs ~3.7) and nearly 3x higher average cost (₹1,271 vs ₹451) — table booking is a strong indicator of a premium dining experience
+
+**Restaurant Types & Cuisines**
+- "Quick Bites" and "Casual Dining" are the most common restaurant types, reflecting a fast/casual food culture
+- North Indian and Chinese are the most widely offered cuisines, followed by South Indian and Biryani as strong standalone categories
+
+**Location Trends**
+- BTM has the highest number of restaurants but the lowest average cost, making it a high-density, budget-friendly food hub
+- Koramangala 5th Block and Indiranagar have fewer restaurants but the highest average cost, representing premium dining areas
+
+**Correlation Analysis**
+- Rate, votes, and cost show only moderate positive correlations (0.37–0.43) — no single factor strongly predicts another
+- Restaurants with higher vote counts consistently converge toward higher ratings (4.0–4.9), while low-vote restaurants show much more scattered/volatile ratings
+
 ## 👤 Author
-🔗 **GitHub Repository:** [zomato-restaurants-data-cleaning](https://github.com/AiWriter404/zomato-restaurants-data-cleaning/tree/main)
-🔗 **Kaggle Notebook:** [zomato-restaurants-data-cleaning](https://www.kaggle.com/code/muhammadumer7804/zomato-restaurants-data-cleaning)
+GitHub: @AiWriter404
+Kaggle: @muhammadumer7804
